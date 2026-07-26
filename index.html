@@ -50,7 +50,7 @@
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-img-bg">
-    <img class="hero-photo" src="img/viktoriia.jpg" alt="Вікторія Плюта, MASSAGE STUDIO V&D">
+    <img class="hero-photo" src="img/hero.jpg" alt="MASSAGE STUDIO V&D, Київ">
   </div>
   <div class="hero-left">
     <div class="hero-tag">
@@ -118,10 +118,8 @@
 <section style="padding:0 6% 90px">
   <div class="section-tag reveal"><div class="tag-line"></div><div class="tag-text">Студія</div></div>
   <h2 class="section-title reveal">Простір, у якому <em>видихають</em></h2>
-  <div class="ph-placeholder reveal">
-    <div class="ph-placeholder-title">Тут будуть фото вашої студії</div>
-    <div class="ph-placeholder-text">Кабінет, кушетка, деталі простору й процес роботи. Надішліть 6–8 знімків, і вони стануть на це місце — з відкриттям у повний екран.</div>
-  </div>
+  <p class="section-sub reveal">Кабінет на дванадцятому поверсі, вікна на Дніпро. Тицяйте, щоб роздивитись</p>
+  <div class="gallery-grid" id="galleryGrid"></div>
 </section>
 
 <!-- REVIEWS -->
@@ -251,6 +249,11 @@ document.getElementById('servicesWrap').innerHTML = D.services.map(function(s){
 document.getElementById('trustWrap').innerHTML = D.trust.map(function(t){
   return '<div class="trust-card reveal"><span class="trust-icon">'+t.icon+'</span>'+
     '<div class="trust-title">'+esc(t.title)+'</div><div class="trust-text">'+esc(t.text)+'</div></div>';
+}).join('');
+
+document.getElementById('galleryGrid').innerHTML = D.gallery.map(function(w,i){
+  return '<div class="g g'+((i%5)+1)+' reveal-scale" onclick="openLightbox(this)">'+
+    '<img src="'+w.img+'" alt="'+esc(w.alt)+'" loading="lazy"></div>';
 }).join('');
 
 document.getElementById('aboutPhoto').src = D.about.photo;
@@ -442,7 +445,7 @@ function toggleFaq(el){
   <a href="https://telegram.me/znahidkawow?text=%D0%9F%D1%80%D0%B8%D0%B2%D1%96%D1%82%21%20%D0%94%D0%B8%D0%B2%D0%BB%D1%8E%D1%81%D1%8C%20%D1%87%D0%B5%D1%80%D0%BD%D0%B5%D1%82%D0%BA%D1%83%20V%26D" target="_blank" rel="noopener" style="background:#ffb01f;color:#101014;font-weight:800;font-size:13.5px;text-decoration:none;padding:8px 18px;border-radius:999px;white-space:nowrap">Обговорити →</a>
   <button onclick="document.getElementById('wow-order-bar').style.display='none'" aria-label="Закрити" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;color:#888;font-size:20px;cursor:pointer;padding:4px 8px">×</button>
 </div>
-<div style="text-align:center;font-size:11px;opacity:.55;padding:6px 12px 64px;font-family:sans-serif">Чернетка. Послуги, ціни, опис і відгуки взяті з чинної сторінки запису студії та відкритого профілю.</div>
+<div style="padding:6px 12px 64px"></div>
 
 </body>
 </html>
