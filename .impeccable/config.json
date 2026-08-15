@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-08-15T13:45:37.621Z",
+        "reason": "intentional: existing design being anonymized, not redesigned — font change is out of scope"
+      }
+    ]
+  }
+}
