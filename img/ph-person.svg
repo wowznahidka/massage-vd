@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <rect width="600" height="800" fill="#e8e0d8"/>
+  <circle cx="300" cy="280" r="90" fill="#c8b8a8" opacity=".7"/>
+  <ellipse cx="300" cy="560" rx="130" ry="110" fill="#c8b8a8" opacity=".5"/>
+  <text x="300" y="720" font-family="Georgia,serif" font-size="18" fill="#9a8878" text-anchor="middle">ФОТО МАЙСТРА</text>
+</svg>

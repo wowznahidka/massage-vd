@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#e8e0d8"/>
+  <rect x="340" y="240" width="120" height="90" rx="6" fill="#c8b8a8" opacity=".6"/>
+  <text x="400" y="380" font-family="Georgia,serif" font-size="16" fill="#b0a090" text-anchor="middle">g4.jpg</text>
+</svg>
