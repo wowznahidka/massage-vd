@@ -28,13 +28,13 @@
 
 <div class="mobile-menu" id="mobileMenu">
   <button onclick="closeMobileMenu()" style="position:absolute;top:12px;right:12px;font-size:30px;color:rgba(255,255,255,.5);background:none;border:none;cursor:pointer;min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center;border-radius:50%">&#215;</button>
-  <a href="#services" onclick="closeMobileMenu()">Послуги</a>
   <a href="#matcher" onclick="closeMobileMenu()">Підбір сеансу</a>
-  <a href="#sensory" onclick="closeMobileMenu()">Комфорт</a>
+  <a href="#services" onclick="closeMobileMenu()">Послуги</a>
   <a href="#about" onclick="closeMobileMenu()">Про студію</a>
-  <a href="#gifts" onclick="closeMobileMenu()">Сертифікати</a>
-  <a href="#reviews" onclick="closeMobileMenu()">Відгуки</a>
+  <a href="#sensory" onclick="closeMobileMenu()">Комфорт</a>
   <a href="#booking" onclick="closeMobileMenu()">Запис</a>
+  <a href="#reviews" onclick="closeMobileMenu()">Відгуки</a>
+  <a href="#gifts" onclick="closeMobileMenu()">Сертифікати</a>
   <a href="#contacts" onclick="closeMobileMenu()">Контакти</a>
   <a href="#booking" class="btn-rose nav-cta" onclick="closeMobileMenu()">Записатись</a>
 </div>
@@ -42,11 +42,11 @@
 <nav id="navbar">
   <a href="#" class="logo">MASSAGE STUDIO<span>V&amp;D</span></a>
   <ul class="nav-links">
-    <li><a href="#services">Послуги</a></li>
     <li><a href="#matcher">Підбір</a></li>
-    <li><a href="#sensory">Комфорт</a></li>
+    <li><a href="#services">Послуги</a></li>
     <li><a href="#about">Про студію</a></li>
-    <li><a href="#gifts">Сертифікати</a></li>
+    <li><a href="#sensory">Комфорт</a></li>
+    <li><a href="#booking">Запис</a></li>
     <li><a href="#reviews">Відгуки</a></li>
     <li><a href="#contacts">Контакти</a></li>
   </ul>
@@ -66,13 +66,13 @@
       <div class="hero-tag-text" id="heroTag"></div>
     </div>
     <h1>Масаж, після якого<br><em>тіло згадує</em><br><strong>як це — не боліти</strong></h1>
-    <p class="hero-desc">Авторська методика, оздоровчий масаж, робота у 4 руки. Фізіотерапевт з багаторічною практикою. За попереднім записом.</p>
+    <p class="hero-desc">Знімаємо спазми в шиї, розвантажуємо спину й повертаємо легкість. Без конвеєра та поспіху. Сеанси проводить дипломований фізіотерапевт з 11-річною практикою.</p>
     <div class="hero-btns">
       <a href="#booking" class="btn-rose">Записатись</a>
-      <a href="#services" class="btn-outline">Послуги та ціни →</a>
+      <a href="#matcher" class="btn-outline">Підібрати масаж →</a>
     </div>
     <div class="hero-stats">
-      <div><div class="stat-num">10</div><div class="stat-label">Років практики</div></div>
+      <div><div class="stat-num">11+</div><div class="stat-label">Років практики</div></div>
       <div><div class="stat-num">4</div><div class="stat-label">Руки одночасно</div></div>
       <div><div class="stat-num">5,0</div><div class="stat-label">Оцінка клієнтів</div></div>
     </div>
@@ -81,19 +81,11 @@
 
 <div class="ribbon" aria-hidden="true"><div class="ribbon-inner" id="ribbonInner"></div></div>
 
-<!-- SERVICES -->
-<section class="services" id="services">
-  <div class="section-tag reveal"><div class="tag-line"></div><div class="tag-text">Послуги</div></div>
-  <h2 class="section-title reveal">Ціни та <em>тривалість</em></h2>
-  <p class="section-sub reveal">Кожен сеанс починається з розмови про те, що болить і чого ви хочете</p>
-  <div class="services-wrap" id="servicesWrap"></div>
-</section>
-
 <!-- INTERACTIVE EXPERIENCE SELECTOR (BODY MATCHER) -->
 <section class="matcher-section" id="matcher">
   <div class="section-tag reveal"><div class="tag-line"></div><div class="tag-text">Індивідуальний підбір</div></div>
-  <h2 class="section-title reveal">Оберіть свій запит — <em>знайдемо рішення</em></h2>
-  <p class="section-sub reveal">Кожне тіло унікальне: від зняття затисків після ноутбука до повного перезавантаження нервової системи</p>
+  <h2 class="section-title reveal">Що зараз турбує <em>ваше тіло?</em></h2>
+  <p class="section-sub reveal">Оберіть запит — підкажемо техніку, яка поверне легкість і зніме біль найшвидше</p>
 
   <div class="matcher-pills-wrap reveal" id="matcherPills"></div>
 
@@ -137,82 +129,225 @@
   </div>
 </section>
 
-<!-- SENSORY PROTOCOL -->
-<section class="sensory-section" id="sensory">
-  <div class="section-tag reveal"><div class="tag-line"></div><div class="tag-text">Стандарти комфорту</div></div>
-  <h2 class="section-title reveal">Чотири виміри <em>вашого спокою</em></h2>
-  <p class="section-sub reveal">Ми створили простір, де турбота відчувається на кожному рівні ще до першого дотику</p>
-  
-  <div class="sensory-grid">
-    <div class="sensory-card reveal">
-      <span class="sensory-icon-wrap">🌡️</span>
-      <h3 class="sensory-card-title">Термо-комфорт канапи</h3>
-      <p class="sensory-card-text">Анатомічний стіл з делікатним підігрівом. Тіло розслабляється вже в перші 3 хвилини без найменшого відчуття прохолоди.</p>
-    </div>
-    <div class="sensory-card reveal">
-      <span class="sensory-icon-wrap">🕯️</span>
-      <h3 class="sensory-card-title">100% соєві свічки та олії</h3>
-      <p class="sensory-card-text">Лише чисті натуральні олії першого холодного віджиму (жожоба, макадамія) та соєві свічки без синтетичних віддушок.</p>
-    </div>
-    <div class="sensory-card reveal">
-      <span class="sensory-icon-wrap">🎶</span>
-      <h3 class="sensory-card-title">Акустична тиша 432 Hz</h3>
-      <p class="sensory-card-text">Спеціально розроблений звуковий ландшафт: звуки теплого океану, ханг та ambient, що зупиняють потік думок і тривоги.</p>
-    </div>
-    <div class="sensory-card reveal">
-      <span class="sensory-icon-wrap">🍵</span>
-      <h3 class="sensory-card-title">Завершальна чайна пауза</h3>
-      <p class="sensory-card-text">Після сеансу ви не вибігаєте на вулицю: 15 хвилин спокою з гірським трав'яним чаєм, медом та лимоном.</p>
-    </div>
-  </div>
-</section>
-
-<!-- TRUST -->
-<section style="padding:0 6% 90px">
-  <div class="trust-wrap" id="trustWrap"></div>
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-tag reveal"><div class="tag-line"></div><div class="tag-text">Каталог послуг</div></div>
+  <h2 class="section-title reveal">Ціни та <em>тривалість</em></h2>
+  <p class="section-sub reveal">Прозорий прайс без прихованих доплат. Працюємо на результат, а не за таймером</p>
+  <div class="services-wrap" id="servicesWrap"></div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" style="padding:0 6% 90px">
+<section id="about" style="padding:80px 6%">
   <div class="master-inner">
     <div class="master-img-wrap reveal-scale">
       <img class="master-photo" id="aboutPhoto" src="img/viktoriia.jpg" alt="Власниця студії">
       <div class="master-badge">
-        <div class="master-badge-num" id="aboutYears"></div>
-        <div class="master-badge-label" id="aboutYearsLabel"></div>
+        <div class="master-badge-num" id="aboutYears">11+</div>
+        <div class="master-badge-label" id="aboutYearsLabel">років практики</div>
       </div>
     </div>
     <div class="master-content">
-      <div class="section-tag reveal"><div class="tag-line"></div><div class="tag-text">Про студію</div></div>
+      <div class="section-tag reveal"><div class="tag-line"></div><div class="tag-text">Про майстра</div></div>
       <h2 class="section-title reveal">Вікторія <em>Довганюк</em></h2>
       <p class="master-about reveal" id="aboutLead"></p>
       <p class="master-about reveal" id="aboutText"></p>
       <div class="tags-wrap reveal">
-        <span class="tag-pill">Авторська методика</span>
-        <span class="tag-pill">Оздоровчий масаж</span>
-        <span class="tag-pill">4 руки</span>
+        <span class="tag-pill">Дипломований фізіотерапевт</span>
+        <span class="tag-pill">Анатомічний підхід</span>
+        <span class="tag-pill">Масаж у 4 руки</span>
         <span class="tag-pill">Для вагітних</span>
         <span class="tag-pill">Для пар</span>
-        <span class="tag-pill">Дитячий</span>
-        <span class="tag-pill">Виїзд</span>
+        <span class="tag-pill">Виїзд зі столом</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- GALLERY PLACEHOLDER -->
-<section style="padding:0 6% 90px">
-  <div class="section-tag reveal"><div class="tag-line"></div><div class="tag-text">Студія</div></div>
-  <h2 class="section-title reveal">Простір, у якому <em>видихають</em></h2>
-  <p class="section-sub reveal">Затишний кабінет студії. Тицяйте, щоб роздивитись</p>
+<!-- SENSORY PROTOCOL -->
+<section class="sensory-section" id="sensory">
+  <div class="section-tag reveal"><div class="tag-line"></div><div class="tag-text">Стандарти затишку</div></div>
+  <h2 class="section-title reveal">Чотири виміри <em>вашого спокою</em></h2>
+  <p class="section-sub reveal">Простір, де турбота відчувається на кожному рівні ще до першого дотику</p>
+  
+  <div class="sensory-grid">
+    <div class="sensory-card reveal">
+      <span class="sensory-icon-wrap">🌡️</span>
+      <h3 class="sensory-card-title">Підігрів канапи</h3>
+      <p class="sensory-card-text">Анатомічний стіл з регульованим теплом. Тіло розслабляється вже в перші 3 хвилини без найменшої прохолоди.</p>
+    </div>
+    <div class="sensory-card reveal">
+      <span class="sensory-icon-wrap">🕯️</span>
+      <h3 class="sensory-card-title">Чисті олії &amp; свічки</h3>
+      <p class="sensory-card-text">100% натуральні олії холодного віджиму (мигдаль, жожоба) та соєві свічки. Жодної синтетики чи липкості.</p>
+    </div>
+    <div class="sensory-card reveal">
+      <span class="sensory-icon-wrap">🎶</span>
+      <h3 class="sensory-card-title">Акустична тиша 432 Hz</h3>
+      <p class="sensory-card-text">М'який спокійний ландшафт: звуки природи, ханг та ambient, що зупиняють потік думок і щоденну метушню.</p>
+    </div>
+    <div class="sensory-card reveal">
+      <span class="sensory-icon-wrap">🍵</span>
+      <h3 class="sensory-card-title">Чайна пауза після сеансу</h3>
+      <p class="sensory-card-text">Після масажу ніхто не підганяє. 15 хвилин повного спокою з теплим альпійським збором, медом та лимоном.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" style="padding:80px 6%">
+  <div class="section-tag reveal"><div class="tag-line"></div><div class="tag-text">Простір студії</div></div>
+  <h2 class="section-title reveal">Тут нарешті <em>видихають</em></h2>
+  <p class="section-sub reveal">Затишний кабінет у центрі Києва. Тицяйте на фото, щоб роздивитись деталі</p>
   <div class="gallery-grid" id="galleryGrid"></div>
 </section>
 
+<!-- BOOKING (THE STAR INTERACTIVE ENGINE) -->
+<section id="booking" class="booking-section">
+  <div class="section-tag reveal"><div class="tag-line"></div><div class="tag-text">Онлайн-запис</div></div>
+  <h2 class="section-title reveal">Оберіть сеанс та <em>зручний час</em></h2>
+  <p class="section-sub reveal">Без передоплати. Підтверджуємо запис у месенджері або телефоном за 5 хвилин</p>
+
+  <div class="bk-container reveal-scale">
+    <div class="bk-main-col">
+      
+      <!-- КРОК 1: ПОСЛУГА -->
+      <div class="bk-step-box">
+        <div class="bk-step-header">
+          <span class="bk-step-badge">1</span>
+          <span class="bk-step-title">Оберіть послугу</span>
+        </div>
+        <div class="bk-services-grid" id="bkServicesGrid"></div>
+      </div>
+
+      <!-- КРОК 2: ДАТА (КАЛЕНДАР НА 7 ДНІВ) -->
+      <div class="bk-step-box">
+        <div class="bk-step-header">
+          <span class="bk-step-badge">2</span>
+          <span class="bk-step-title">Оберіть день візиту</span>
+        </div>
+        <div class="bk-calendar-scroll" id="bkCalendar"></div>
+      </div>
+
+      <!-- КРОК 3: ЧАС -->
+      <div class="bk-step-box">
+        <div class="bk-step-header">
+          <span class="bk-step-badge">3</span>
+          <span class="bk-step-title">Зручний час</span>
+        </div>
+        <div class="bk-times-wrap" id="bkTimes"></div>
+      </div>
+
+      <!-- КРОК 4: ДЕ ПРОВОДИТИ -->
+      <div class="bk-step-box">
+        <div class="bk-step-header">
+          <span class="bk-step-badge">4</span>
+          <span class="bk-step-title">Формат сеансу</span>
+        </div>
+        <div class="bk-place-toggle">
+          <button class="bk-place-btn on" type="button" data-place="У студії (вул. Хрещатик)">
+            <span class="place-icon">🏢</span>
+            <span class="place-text">
+              <strong>У студії</strong>
+              <small>Затишний кабінет у центрі</small>
+            </span>
+          </button>
+          <button class="bk-place-btn" type="button" data-place="Виїзд зі столом до клієнта">
+            <span class="place-icon">🚗</span>
+            <span class="place-text">
+              <strong>Виїзд додому</strong>
+              <small>Приїжджаємо зі своїм столом</small>
+            </span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ПРАВА КОЛОНКА: РЕЗЮМЕ ТА ЗАПИС -->
+    <div class="bk-summary-col">
+      <div class="bk-receipt-card">
+        <div class="receipt-header">
+          <div class="receipt-brand">MASSAGE STUDIO V&amp;D</div>
+          <div class="receipt-badge">Бронювання</div>
+        </div>
+
+        <div class="receipt-body">
+          <div class="receipt-item">
+            <span class="receipt-lbl">Сеанс</span>
+            <span class="receipt-val" id="recService">Оберіть послугу ліворуч</span>
+          </div>
+          <div class="receipt-item">
+            <span class="receipt-lbl">Тривалість</span>
+            <span class="receipt-val" id="recTime">—</span>
+          </div>
+          <div class="receipt-item">
+            <span class="receipt-lbl">Дата та час</span>
+            <span class="receipt-val highlight" id="recDateTime">—</span>
+          </div>
+          <div class="receipt-item">
+            <span class="receipt-lbl">Локація</span>
+            <span class="receipt-val" id="recPlace">У студії (вул. Хрещатик)</span>
+          </div>
+          <div class="receipt-divider"></div>
+          <div class="receipt-item total">
+            <span class="receipt-lbl">До сплати</span>
+            <span class="receipt-price" id="recPrice">3 000 ₴</span>
+          </div>
+          <div class="receipt-guarantee">✓ Оплата після сеансу · Без передоплати</div>
+        </div>
+
+        <div id="bkFormBox">
+          <div class="bk-form-inner">
+            <div class="bk-field">
+              <label for="bkName">Ваше імʼя</label>
+              <input type="text" id="bkName" class="bk-input-modern" placeholder="Як до вас звертатися" autocomplete="name">
+            </div>
+            <div class="bk-field">
+              <label for="bkPhone">Номер телефону</label>
+              <input type="tel" id="bkPhone" class="bk-input-modern" placeholder="+380 …" autocomplete="tel">
+            </div>
+
+            <div class="bk-channel-select">
+              <label>Де зручно підтвердити:</label>
+              <div class="bk-channels">
+                <button type="button" class="channel-btn on" data-ch="Telegram">💬 Telegram</button>
+                <button type="button" class="channel-btn" data-ch="Дзвінок">📞 Дзвінок</button>
+                <button type="button" class="channel-btn" data-ch="WhatsApp">📱 WhatsApp</button>
+              </div>
+            </div>
+
+            <button class="bk-submit-btn" id="bkSend" type="button">
+              <span>Підтвердити запис</span>
+              <span class="btn-arrow">→</span>
+            </button>
+
+            <a href="#" target="_blank" rel="noopener" class="bk-tg-quick-btn" id="bkTgDirect">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+              <span>Записатися в Telegram у 1 клік</span>
+            </a>
+
+            <div class="bk-privacy-note">Ваші дані конфіденційні та не передаються третім особам</div>
+          </div>
+        </div>
+
+        <div class="bk-success-box" id="bkDone" style="display:none">
+          <div class="success-icon">✨</div>
+          <div class="success-title">Запис прийнято!</div>
+          <div class="success-text" id="bkDoneSub">Ми вже отримали заявку і напишемо вам для підтвердження.</div>
+          <button type="button" class="btn-rose" onclick="bkReset()" style="margin-top:20px;padding:12px 28px;font-size:12px">Записатись ще раз</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- REVIEWS -->
-<section id="reviews" style="padding:0 6% 90px">
+<section id="reviews" style="padding:80px 6%">
   <div class="section-tag reveal"><div class="tag-line"></div><div class="tag-text">Відгуки</div></div>
   <h2 class="section-title reveal">Що кажуть <em>клієнти</em></h2>
-  <p class="section-sub reveal">Оцінка 5,0. Нові відгуки додаються сюди автоматично</p>
+  <p class="section-sub reveal">Оцінка 5,0 на картах. Чесні відгуки людей, які довіряють нам свій відпочинок</p>
   <div class="rv-grid" id="reviewsWrap"></div>
 </section>
 
@@ -253,63 +388,6 @@
       </div>
 
       <button class="btn-rose" type="button" onclick="bookCertificate()">Замовити сертифікат →</button>
-    </div>
-  </div>
-</section>
-
-<!-- BOOKING -->
-<section id="booking" style="padding:90px 6%;background:var(--nude)">
-  <div class="section-tag reveal"><div class="tag-line"></div><div class="tag-text">Онлайн-запис</div></div>
-  <h2 class="section-title reveal">Записатись на <em>сеанс</em></h2>
-  <p class="section-sub reveal">Заявка приходить одразу. Ми передзвонюємо й підтверджуємо час</p>
-
-  <div class="bk-wrap">
-    <div class="bk-step-label">Крок 1 · Послуга</div>
-    <div class="bk-opt-chips" id="bkServices" style="margin-bottom:36px"></div>
-
-    <div class="bk-step-label">Крок 2 · Коли вам зручно</div>
-    <div class="bk-opts">
-      <div>
-        <div class="bk-opt-label">День</div>
-        <div class="bk-opt-chips" data-opt="day">
-          <button class="bk-chip on" data-v="Найближчим часом">Найближчим часом</button>
-          <button class="bk-chip" data-v="Цього тижня">Цього тижня</button>
-          <button class="bk-chip" data-v="Наступного тижня">Наступного тижня</button>
-        </div>
-      </div>
-      <div>
-        <div class="bk-opt-label">Час доби</div>
-        <div class="bk-opt-chips" data-opt="part">
-          <button class="bk-chip on" data-v="Ранок">Ранок</button>
-          <button class="bk-chip" data-v="День">День</button>
-          <button class="bk-chip" data-v="Вечір">Вечір</button>
-        </div>
-      </div>
-      <div>
-        <div class="bk-opt-label">Де</div>
-        <div class="bk-opt-chips" data-opt="place">
-          <button class="bk-chip on" data-v="У студії">У студії</button>
-          <button class="bk-chip" data-v="Виїзд до клієнта">Виїзд до мене</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="bk-summary">
-      <div id="bkFormBox">
-        <div class="bk-sum-line" id="bkSumLine">Оберіть послугу</div>
-        <div class="bk-sum-sub" id="bkSumSub">Заявка приходить адміністратору студії. Передоплата не потрібна.</div>
-        <div class="bk-form">
-          <input class="bk-input" id="bkName" type="text" placeholder="Ваше імʼя" autocomplete="name">
-          <input class="bk-input" id="bkPhone" type="tel" placeholder="+380…" autocomplete="tel">
-        </div>
-        <button class="bk-send" id="bkSend">Записатись</button>
-        <div class="bk-note">Натискаючи, ви надсилаєте заявку. Ми передзвонимо й узгодимо точний час.</div>
-      </div>
-      <div class="bk-done" id="bkDone">
-        <div class="bk-done-title">Заявку прийнято</div>
-        <div class="bk-sum-sub" id="bkDoneSub"></div>
-        <button class="bk-send" onclick="bkReset()" style="max-width:240px;margin:0 auto">Записатись ще раз</button>
-      </div>
     </div>
   </div>
 </section>
@@ -514,10 +592,148 @@ function setMatcher(i){
   renderMatcher();
 }
 
+renderMatcher();
+
+/* ══════════ ІНТЕРАКТИВНИЙ ОНЛАЙН-ЗАПИС ══════════ */
+var BK = {
+  service: D.services[0],
+  date: null,
+  time: '14:30',
+  place: 'У студії (вул. Хрещатик)',
+  channel: 'Telegram'
+};
+
+// 1. Послуги
+var bkSrvWrap = document.getElementById('bkServicesGrid');
+if (bkSrvWrap){
+  bkSrvWrap.innerHTML = D.services.map(function(s, i){
+    var isSel = i === 0;
+    return '<div class="bk-srv-card '+(isSel?'on':'')+'" data-i="'+i+'" onclick="bkSelectService('+i+')">'+
+      '<div class="bk-srv-name">'+esc(s.name)+'</div>'+
+      '<div class="bk-srv-meta">'+
+        '<span>'+esc(s.time)+'</span>'+
+        '<span class="price">'+esc(s.price)+'</span>'+
+      '</div>'+
+    '</div>';
+  }).join('');
+}
+
+function bkSelectService(i){
+  BK.service = D.services[i];
+  var cards = document.querySelectorAll('#bkServicesGrid .bk-srv-card');
+  for (var j = 0; j < cards.length; j++){
+    cards[j].classList.toggle('on', +cards[j].getAttribute('data-i') === i);
+  }
+  updateReceipt();
+}
+
+// 2. 7-денний календар
+var DAYS = [];
+(function(){
+  var now = new Date();
+  var dows = ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
+  var months = ['січ', 'лют', 'бер', 'кві', 'тра', 'чер', 'лип', 'сер', 'вер', 'жов', 'лис', 'гру'];
+  for (var i = 0; i < 7; i++){
+    var d = new Date(now);
+    d.setDate(now.getDate() + i);
+    var dowLabel = i === 0 ? 'Сьогодні' : (i === 1 ? 'Завтра' : dows[d.getDay()]);
+    DAYS.push({
+      idx: i,
+      dow: dowLabel,
+      num: d.getDate(),
+      mon: months[d.getMonth()],
+      fullHuman: dowLabel + ', ' + d.getDate() + ' ' + months[d.getMonth()]
+    });
+  }
+  BK.date = DAYS[0];
+})();
+
+var bkCalWrap = document.getElementById('bkCalendar');
+if (bkCalWrap){
+  bkCalWrap.innerHTML = DAYS.map(function(d, i){
+    return '<div class="bk-day-card '+(i===0?'on':'')+'" data-i="'+i+'" onclick="bkSelectDay('+i+')">'+
+      '<div class="bk-day-dow">'+esc(d.dow)+'</div>'+
+      '<div class="bk-day-num">'+d.num+'</div>'+
+      '<div class="bk-day-mon">'+esc(d.mon)+'</div>'+
+    '</div>';
+  }).join('');
+}
+
+function bkSelectDay(i){
+  BK.date = DAYS[i];
+  var cards = document.querySelectorAll('#bkCalendar .bk-day-card');
+  for (var j = 0; j < cards.length; j++){
+    cards[j].classList.toggle('on', +cards[j].getAttribute('data-i') === i);
+  }
+  updateReceipt();
+}
+
+// 3. Слоти часу
+var SLOTS = ['10:00', '11:30', '13:00', '14:30', '16:00', '17:30', '19:00', '20:30'];
+var bkTmWrap = document.getElementById('bkTimes');
+if (bkTmWrap){
+  bkTmWrap.innerHTML = SLOTS.map(function(slot){
+    var isSel = slot === BK.time;
+    return '<button type="button" class="bk-time-btn '+(isSel?'on':'')+'" data-t="'+slot+'" onclick="bkSelectTime(\''+slot+'\')">'+slot+'</button>';
+  }).join('');
+}
+
+function bkSelectTime(slot){
+  BK.time = slot;
+  var btns = document.querySelectorAll('#bkTimes .bk-time-btn');
+  for (var j = 0; j < btns.length; j++){
+    btns[j].classList.toggle('on', btns[j].getAttribute('data-t') === slot);
+  }
+  updateReceipt();
+}
+
+// 4. Локація
+document.querySelectorAll('.bk-place-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.bk-place-btn').forEach(function(b){ b.classList.remove('on'); });
+    btn.classList.add('on');
+    BK.place = btn.getAttribute('data-place');
+    updateReceipt();
+  });
+});
+
+// 5. Месенджер для підтвердження
+document.querySelectorAll('.channel-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.channel-btn').forEach(function(b){ b.classList.remove('on'); });
+    btn.classList.add('on');
+    BK.channel = btn.getAttribute('data-ch');
+    updateReceipt();
+  });
+});
+
+// 6. Оновлення чека
+function updateReceipt(){
+  if (BK.service){
+    document.getElementById('recService').textContent = BK.service.name;
+    document.getElementById('recTime').textContent = BK.service.time;
+    document.getElementById('recPrice').textContent = BK.service.price;
+  }
+  var dtStr = (BK.date ? BK.date.fullHuman : 'Сьогодні') + ' · ' + (BK.time || '14:30');
+  document.getElementById('recDateTime').textContent = dtStr;
+  document.getElementById('recPlace').textContent = BK.place.indexOf('студії') !== -1 ? 'У студії (Хрещатик)' : 'Виїзд додому';
+
+  var tgBtn = document.getElementById('bkTgDirect');
+  if (tgBtn){
+    var sName = BK.service ? BK.service.name : 'Масаж';
+    var sPrice = BK.service ? BK.service.price : '';
+    var tgText = 'Вітаю! Хочу записатися на сеанс у студію V&D:\n' +
+      '💆 ' + sName + ' (' + sPrice + ')\n' +
+      '📅 ' + dtStr + '\n' +
+      '📍 ' + BK.place;
+    tgBtn.href = D.studio.tg + '?text=' + encodeURIComponent(tgText);
+  }
+}
+
 function quickSelectService(idx){
-  bkService(idx);
+  bkSelectService(idx);
   document.getElementById('booking').scrollIntoView({behavior:'smooth'});
-  highlightSelectedChip(idx);
+  highlightSelectedServiceCard(idx);
 }
 
 function bookFromMatcher(){
@@ -529,42 +745,33 @@ function bookFromMatcher(){
       break;
     }
   }
-  bkService(foundIdx);
+  bkSelectService(foundIdx);
   document.getElementById('booking').scrollIntoView({behavior:'smooth'});
-  highlightSelectedChip(foundIdx);
+  highlightSelectedServiceCard(foundIdx);
 }
 
 function bookCertificate(){
-  bkService(0);
+  bkSelectService(0);
   document.getElementById('booking').scrollIntoView({behavior:'smooth'});
-  var line = document.getElementById('bkSumLine');
-  if (line) line.textContent = 'Подарунковий VIP-сертифікат';
-  var sub = document.getElementById('bkSumSub');
-  if (sub) sub.textContent = 'Крафтовий бокс або PDF · Узгодимо деталі під час дзвінка';
-  highlightSelectedChip(0);
+  document.getElementById('recService').textContent = 'Подарунковий VIP-сертифікат';
+  document.getElementById('recTime').textContent = 'Крафтовий бокс або PDF';
+  highlightSelectedServiceCard(0);
 }
 
-function highlightSelectedChip(idx){
+function highlightSelectedServiceCard(idx){
   setTimeout(function(){
-    var chips = document.querySelectorAll('#bkServices .bk-chip');
-    if (chips[idx]){
-      chips[idx].style.transition = 'transform .2s ease, box-shadow .2s ease';
-      chips[idx].style.transform = 'scale(1.08)';
-      chips[idx].style.boxShadow = '0 0 16px rgba(138,122,95,0.6)';
+    var cards = document.querySelectorAll('#bkServicesGrid .bk-srv-card');
+    if (cards[idx]){
+      cards[idx].style.transition = 'transform .25s ease, box-shadow .25s ease';
+      cards[idx].style.transform = 'scale(1.04)';
+      cards[idx].style.boxShadow = '0 0 20px rgba(182, 161, 121, 0.7)';
       setTimeout(function(){
-        chips[idx].style.transform = 'none';
-        chips[idx].style.boxShadow = 'none';
+        cards[idx].style.transform = 'none';
+        cards[idx].style.boxShadow = 'none';
       }, 500);
     }
   }, 350);
 }
-
-renderMatcher();
-
-document.getElementById('trustWrap').innerHTML = D.trust.map(function(t){
-  return '<div class="trust-card reveal"><span class="trust-icon">'+t.icon+'</span>'+
-    '<div class="trust-title">'+esc(t.title)+'</div><div class="trust-text">'+esc(t.text)+'</div></div>';
-}).join('');
 
 document.getElementById('galleryGrid').innerHTML = D.gallery.map(function(w,i){
   return '<div class="g g'+((i%5)+1)+' reveal-scale" onclick="openLightbox(this)">'+
@@ -606,103 +813,69 @@ document.getElementById('faqWrap').innerHTML = D.faq.map(function(f){
   document.getElementById('hoursNote').textContent = 'Точний час узгоджуємо після заявки. Виїзд до клієнта по Києву й за місто.';
   document.getElementById('footerIg').href = s.instagramUrl;
 })();
-</script>
 
-<script>
-/* ЗАПИС */
-var BK = { service:null, day:'Найближчим часом', part:'Ранок', place:'У студії' };
-
-document.getElementById('bkServices').innerHTML = D.services.map(function(s,i){
-  return '<button class="bk-chip" data-i="'+i+'" onclick="bkService('+i+')">'+esc(s.name)+'</button>';
-}).join('');
-
-function bkService(i){
-  BK.service = D.services[i];
-  var chips = document.querySelectorAll('#bkServices .bk-chip');
-  for (var j=0;j<chips.length;j++) chips[j].classList.toggle('on', +chips[j].getAttribute('data-i') === i);
-  renderSummary();
-}
-
-document.querySelectorAll('.bk-opts .bk-opt-chips').forEach(function(group){
-  var key = group.getAttribute('data-opt');
-  group.querySelectorAll('.bk-chip').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      group.querySelectorAll('.bk-chip').forEach(function(b){ b.classList.remove('on'); });
-      btn.classList.add('on');
-      BK[key] = btn.getAttribute('data-v');
-      renderSummary();
-    });
-  });
-});
-
-function renderSummary(){
-  var line = document.getElementById('bkSumLine');
-  var sub = document.getElementById('bkSumSub');
-  if (BK.service){
-    line.textContent = BK.service.name + ' · ' + BK.service.price;
-    sub.textContent = BK.service.time + ' · ' + BK.day + ' · ' + BK.part + ' · ' + BK.place;
-  } else {
-    line.textContent = 'Оберіть послугу';
-    sub.textContent = 'Заявка приходить адміністратору студії. Передоплата не потрібна.';
-  }
-}
-
-function bkReset(){
-  document.getElementById('bkDone').style.display='none';
-  document.getElementById('bkFormBox').style.display='block';
-}
-
+// 7. Відправка форми
 document.getElementById('bkSend').addEventListener('click', function(){
   var btn = this;
   var name = document.getElementById('bkName');
   var phone = document.getElementById('bkPhone');
   name.classList.remove('err'); phone.classList.remove('err');
 
-  if (!BK.service){
-    document.getElementById('bkSumLine').textContent = 'Спочатку оберіть послугу';
-    document.getElementById('booking').scrollIntoView({behavior:'smooth'});
-    return;
-  }
   if (!name.value.trim()){ name.classList.add('err'); name.focus(); return; }
   if (phone.value.replace(/\D/g,'').length < 9){ phone.classList.add('err'); phone.focus(); return; }
 
+  var dtStr = (BK.date ? BK.date.fullHuman : 'Сьогодні') + ' · ' + (BK.time || '14:30');
   var payload = {
     studio: 'vd',
-    master: BK.service.name,
-    master_level: BK.service.price,
-    date: '',
-    date_human: BK.day,
-    time: BK.part,
-    details: BK.service.time + ' · ' + BK.place,
+    master: BK.service ? BK.service.name : 'Масаж',
+    master_level: BK.service ? BK.service.price : '',
+    date: BK.date ? BK.date.dateStr : '',
+    date_human: dtStr,
+    time: BK.time,
+    details: (BK.service ? BK.service.time : '') + ' · ' + BK.place + ' · Зв\'язок: ' + BK.channel,
     name: name.value.trim(),
     phone: phone.value.trim()
   };
 
-  btn.disabled = true; btn.textContent = 'Надсилаємо…';
+  btn.disabled = true;
+  var spanText = btn.querySelector('span');
+  if (spanText) spanText.textContent = 'Надсилаємо…';
 
-  var text = 'Заявка з сайту MASSAGE STUDIO V&D\n\n' +
+  var tgFallbackText = 'Заявка на масаж з сайту V&D:\n\n' +
     payload.name + ', ' + payload.phone + '\n' +
-    BK.service.name + ' — ' + BK.service.price + ', ' + BK.service.time + '\n' +
-    BK.day + ', ' + BK.part + '\n' + BK.place;
+    payload.master + ' — ' + payload.master_level + '\n' +
+    'Час: ' + dtStr + '\n' +
+    'Локація: ' + BK.place + '\n' +
+    'Канал зв\'язку: ' + BK.channel;
 
   function done(){
-    document.getElementById('bkFormBox').style.display='none';
-    document.getElementById('bkDone').style.display='block';
+    document.getElementById('bkFormBox').style.display = 'none';
+    document.getElementById('bkDone').style.display = 'block';
     document.getElementById('bkDoneSub').textContent =
-      BK.service.name + '. Ми зателефонуємо на ' + payload.phone + ' і узгодимо точний час.';
-    btn.disabled = false; btn.textContent = 'Записатись';
+      payload.master + ' на ' + dtStr + '. Ми напишемо вам у ' + BK.channel + ' за номером ' + payload.phone + ' для підтвердження.';
+    btn.disabled = false;
+    if (spanText) spanText.textContent = 'Підтвердити запис';
   }
 
   if (window.BOOKING_ENDPOINT){
     fetch(window.BOOKING_ENDPOINT, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload) })
-      .then(done).catch(function(){ window.open(D.studio.tg + '?text=' + encodeURIComponent(text), '_blank'); done(); });
+      .then(done)
+      .catch(function(){
+        window.open(D.studio.tg + '?text=' + encodeURIComponent(tgFallbackText), '_blank');
+        done();
+      });
   } else {
-    window.open(D.studio.tg + '?text=' + encodeURIComponent(text), '_blank');
+    window.open(D.studio.tg + '?text=' + encodeURIComponent(tgFallbackText), '_blank');
     done();
   }
 });
 
-renderSummary();
+function bkReset(){
+  document.getElementById('bkDone').style.display = 'none';
+  document.getElementById('bkFormBox').style.display = 'block';
+}
+
+updateReceipt();
 </script>
 
 <script>
