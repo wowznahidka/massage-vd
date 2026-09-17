@@ -14,6 +14,9 @@
 <meta property="og:description" content="Авторська методика, масаж у 4 руки, для вагітних і для пар. Запис онлайн.">
 <meta property="og:image" content="img/hero.jpg">
 <meta property="og:locale" content="uk_UA">
+
+
+
 </head>
 <body>
 <div id="scroll-prog" aria-hidden="true"></div>
@@ -26,7 +29,10 @@
 <div class="mobile-menu" id="mobileMenu">
   <button onclick="closeMobileMenu()" style="position:absolute;top:12px;right:12px;font-size:30px;color:rgba(255,255,255,.5);background:none;border:none;cursor:pointer;min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center;border-radius:50%">&#215;</button>
   <a href="#services" onclick="closeMobileMenu()">Послуги</a>
+  <a href="#matcher" onclick="closeMobileMenu()">Підбір сеансу</a>
+  <a href="#sensory" onclick="closeMobileMenu()">Комфорт</a>
   <a href="#about" onclick="closeMobileMenu()">Про студію</a>
+  <a href="#gifts" onclick="closeMobileMenu()">Сертифікати</a>
   <a href="#reviews" onclick="closeMobileMenu()">Відгуки</a>
   <a href="#booking" onclick="closeMobileMenu()">Запис</a>
   <a href="#contacts" onclick="closeMobileMenu()">Контакти</a>
@@ -34,12 +40,14 @@
 </div>
 
 <nav id="navbar">
-  <a href="#" class="logo">MASSAGE STUDIO<span>DEMO</span></a>
+  <a href="#" class="logo">MASSAGE STUDIO<span>V&amp;D</span></a>
   <ul class="nav-links">
     <li><a href="#services">Послуги</a></li>
+    <li><a href="#matcher">Підбір</a></li>
+    <li><a href="#sensory">Комфорт</a></li>
     <li><a href="#about">Про студію</a></li>
+    <li><a href="#gifts">Сертифікати</a></li>
     <li><a href="#reviews">Відгуки</a></li>
-    <li><a href="#booking">Запис</a></li>
     <li><a href="#contacts">Контакти</a></li>
   </ul>
   <a href="#booking" class="nav-cta">Записатись</a>
@@ -81,6 +89,84 @@
   <div class="services-wrap" id="servicesWrap"></div>
 </section>
 
+<!-- INTERACTIVE EXPERIENCE SELECTOR (BODY MATCHER) -->
+<section class="matcher-section" id="matcher">
+  <div class="section-tag reveal"><div class="tag-line"></div><div class="tag-text">Індивідуальний підбір</div></div>
+  <h2 class="section-title reveal">Оберіть свій запит — <em>знайдемо рішення</em></h2>
+  <p class="section-sub reveal">Кожне тіло унікальне: від зняття затисків після ноутбука до повного перезавантаження нервової системи</p>
+
+  <div class="matcher-pills-wrap reveal" id="matcherPills"></div>
+
+  <div class="matcher-card reveal-scale" id="matcherCard">
+    <div class="matcher-img-box">
+      <img id="matcherImg" src="img/g1.jpg" alt="Підбір масажу">
+      <div class="matcher-tag-badge" id="matcherBadge">Шия та поперек</div>
+    </div>
+    <div class="matcher-info">
+      <div class="matcher-rec-label" id="matcherRecLabel">Рекомендована техніка</div>
+      <h3 class="matcher-title" id="matcherTitle">Оздоровчий масаж усього тіла</h3>
+      <p class="matcher-desc" id="matcherDesc">Глибоке анатомічне опрацювання тригерних точок, лопаток та шийно-комірцевої зони. Знімає хронічний м'язовий спазм і повертає свободу рухів.</p>
+      
+      <div class="matcher-benefits">
+        <div class="matcher-benefit-item">
+          <div class="matcher-benefit-val" id="matcherBen1">98% зняття затисків</div>
+          <div class="matcher-benefit-sub" id="matcherBen1Sub">Очікуваний результат</div>
+        </div>
+        <div class="matcher-benefit-item">
+          <div class="matcher-benefit-val" id="matcherBen2">Тепла олія мигдалю</div>
+          <div class="matcher-benefit-sub" id="matcherBen2Sub">Органічна основа</div>
+        </div>
+        <div class="matcher-benefit-item">
+          <div class="matcher-benefit-val" id="matcherBen3">Середня / Глибока</div>
+          <div class="matcher-benefit-sub" id="matcherBen3Sub">Інтенсивність натиску</div>
+        </div>
+        <div class="matcher-benefit-item">
+          <div class="matcher-benefit-val" id="matcherBen4">Анатомічний стіл</div>
+          <div class="matcher-benefit-sub" id="matcherBen4Sub">М'який підігрів</div>
+        </div>
+      </div>
+
+      <div class="matcher-action-row">
+        <div class="matcher-price-box">
+          <div class="price-val" id="matcherPrice">4 500 ₴</div>
+          <div class="price-time" id="matcherTime">1 год 30 хв · Авторський протокол</div>
+        </div>
+        <button class="btn-rose" id="matcherBookBtn" type="button" onclick="bookFromMatcher()">Записатись на цей сеанс →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SENSORY PROTOCOL -->
+<section class="sensory-section" id="sensory">
+  <div class="section-tag reveal"><div class="tag-line"></div><div class="tag-text">Стандарти комфорту</div></div>
+  <h2 class="section-title reveal">Чотири виміри <em>вашого спокою</em></h2>
+  <p class="section-sub reveal">Ми створили простір, де турбота відчувається на кожному рівні ще до першого дотику</p>
+  
+  <div class="sensory-grid">
+    <div class="sensory-card reveal">
+      <span class="sensory-icon-wrap">🌡️</span>
+      <h3 class="sensory-card-title">Термо-комфорт канапи</h3>
+      <p class="sensory-card-text">Анатомічний стіл з делікатним підігрівом. Тіло розслабляється вже в перші 3 хвилини без найменшого відчуття прохолоди.</p>
+    </div>
+    <div class="sensory-card reveal">
+      <span class="sensory-icon-wrap">🕯️</span>
+      <h3 class="sensory-card-title">100% соєві свічки та олії</h3>
+      <p class="sensory-card-text">Лише чисті натуральні олії першого холодного віджиму (жожоба, макадамія) та соєві свічки без синтетичних віддушок.</p>
+    </div>
+    <div class="sensory-card reveal">
+      <span class="sensory-icon-wrap">🎶</span>
+      <h3 class="sensory-card-title">Акустична тиша 432 Hz</h3>
+      <p class="sensory-card-text">Спеціально розроблений звуковий ландшафт: звуки теплого океану, ханг та ambient, що зупиняють потік думок і тривоги.</p>
+    </div>
+    <div class="sensory-card reveal">
+      <span class="sensory-icon-wrap">🍵</span>
+      <h3 class="sensory-card-title">Завершальна чайна пауза</h3>
+      <p class="sensory-card-text">Після сеансу ви не вибігаєте на вулицю: 15 хвилин спокою з гірським трав'яним чаєм, медом та лимоном.</p>
+    </div>
+  </div>
+</section>
+
 <!-- TRUST -->
 <section style="padding:0 6% 90px">
   <div class="trust-wrap" id="trustWrap"></div>
@@ -98,7 +184,7 @@
     </div>
     <div class="master-content">
       <div class="section-tag reveal"><div class="tag-line"></div><div class="tag-text">Про студію</div></div>
-      <h2 class="section-title reveal">[Ваше <em>ім'я</em>]</h2>
+      <h2 class="section-title reveal">Вікторія <em>Довганюк</em></h2>
       <p class="master-about reveal" id="aboutLead"></p>
       <p class="master-about reveal" id="aboutText"></p>
       <div class="tags-wrap reveal">
@@ -128,6 +214,47 @@
   <h2 class="section-title reveal">Що кажуть <em>клієнти</em></h2>
   <p class="section-sub reveal">Оцінка 5,0. Нові відгуки додаються сюди автоматично</p>
   <div class="rv-grid" id="reviewsWrap"></div>
+</section>
+
+<!-- VIP GIFT CERTIFICATES -->
+<section class="gift-section" id="gifts">
+  <div class="gift-wrap">
+    <div class="gift-visual reveal-scale">
+      <div class="gift-card-mockup">
+        <div class="gift-foil-badge">
+          <span>MASSAGE STUDIO V&amp;D</span>
+          <span>VIP CERTIFICATE</span>
+        </div>
+        <h3 class="gift-card-headline">Подарунок справжнього перезавантаження</h3>
+        <p class="gift-card-subtext">Даруйте не речі, а години легкості в тілі, глибокого сну та повного спокою у затишному просторі студії.</p>
+        <div class="gift-card-bottom">
+          <div>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px">Номінал або послуга</div>
+            <div style="font-size:16px;color:#fff;font-weight:500">На будь-який масаж або суму</div>
+          </div>
+          <div class="gift-card-code">№ VD-2026-VIP</div>
+        </div>
+      </div>
+    </div>
+    <div class="gift-content reveal">
+      <div class="section-tag"><div class="tag-line"></div><div class="tag-text" style="color:var(--gold)">Подарунок близьким</div></div>
+      <h2 class="section-title">Сертифікат, який <em>справді хочуть отримати</em></h2>
+      <p class="section-sub">Ідеальний жест турботи для коханої людини, батьків чи колеги. Діє 6 місяців з моменту покупки.</p>
+      
+      <div class="gift-formats">
+        <div class="gift-format-box">
+          <div class="gift-format-title">📦 Преміум-бокс</div>
+          <div class="gift-format-desc">Крафтовий дизайнерський конверт з шовковою стрічкою та сургучем. Доставка на таксі або самовивіз.</div>
+        </div>
+        <div class="gift-format-box">
+          <div class="gift-format-title">⚡ Електронний PDF</div>
+          <div class="gift-format-desc">Персоналізований VIP-сертифікат в Telegram чи на пошту за 5 хвилин. Зручно для термінового подарунка.</div>
+        </div>
+      </div>
+
+      <button class="btn-rose" type="button" onclick="bookCertificate()">Замовити сертифікат →</button>
+    </div>
+  </div>
 </section>
 
 <!-- BOOKING -->
@@ -219,12 +346,10 @@
 </section>
 
 <footer>
-  <a href="#" class="footer-logo">MASSAGE STUDIO<span>DEMO</span></a>
-  <span class="footer-copy">© 2026 MASSAGE STUDIO</span>
+  <a href="#" class="footer-logo">MASSAGE STUDIO<span>V&amp;D</span></a>
+  <span class="footer-copy">© 2026 MASSAGE STUDIO V&amp;D</span>
   <div class="footer-social"><a href="#" id="footerIg" target="_blank" rel="noopener">Instagram</a></div>
 </footer>
-
-<a href="https://t.me/studio_sites" class="tg-float" target="_blank" rel="noopener" title="Написати в Telegram">✦</a>
 
 <script src="data.js"></script>
 <script>
@@ -239,12 +364,202 @@ document.getElementById('heroTag').textContent = D.studio.city + ' · За по�
     .map(function(t){ return '<span class="ribbon-item">'+esc(t)+'</span>'; }).join('');
 })();
 
-document.getElementById('servicesWrap').innerHTML = D.services.map(function(s){
-  return '<div class="srv reveal">'+
+document.getElementById('servicesWrap').innerHTML = D.services.map(function(s, idx){
+  return '<div class="srv reveal" onclick="quickSelectService('+idx+')">'+
     '<div class="srv-name">'+esc(s.name)+'</div>'+
     '<div class="srv-desc">'+esc(s.desc)+'</div>'+
-    '<div class="srv-bottom"><div class="srv-price">'+esc(s.price)+'</div><div class="srv-time">'+esc(s.time)+'</div></div></div>';
+    '<div class="srv-bottom"><div class="srv-price">'+esc(s.price)+'</div><div class="srv-time">'+esc(s.time)+'</div></div>'+
+    '<button class="srv-action-btn" type="button">Обрати для запису →</button>'+
+  '</div>';
 }).join('');
+
+/* MATCHER LOGIC */
+var MATCHER_PRESETS = [
+  {
+    icon: '💼',
+    label: 'Сидяча робота & Спина',
+    serviceName: 'Оздоровчий масаж усього тіла',
+    badge: 'Шия · Плечі · Поперек',
+    recLabel: 'Рекомендована техніка',
+    title: 'Оздоровчий масаж усього тіла',
+    desc: "Глибоке анатомічне опрацювання тригерних точок, лопаток та шийно-комірцевої зони. Знімає хронічний м'язовий спазм після робочого дня за ноутбуком і повертає легкість поставі.",
+    img: 'img/g1.jpg',
+    b1: '98% зняття затисків', b1Sub: 'Очікуваний результат',
+    b2: 'Тепла олія мигдалю', b2Sub: 'Органічна основа',
+    b3: 'Середня / Глибока', b3Sub: 'Інтенсивність натиску',
+    b4: 'Анатомічний стіл', b4Sub: 'М\'який підігрів',
+    price: '4 500 ₴',
+    time: '1 год 30 хв · Авторський протокол'
+  },
+  {
+    icon: '⚡',
+    label: 'Хронічний стрес & Перевтома',
+    serviceName: 'Масаж у 4 руки',
+    badge: 'Повне вимкнення думок',
+    recLabel: 'Королівський ритуал',
+    title: 'Синхронний масаж у 4 руки',
+    desc: 'Двоє майстрів працюють синхронно в єдиному ритмі. Мозок не здатен контролювати рухи чотирьох рук одночасно — завдяки цьому глибоке медитативне розслаблення настає вже на 10-й хвилині.',
+    img: 'img/hero.jpg',
+    b1: 'Вдвічі глибший релакс', b1Sub: 'Очікуваний результат',
+    b2: 'Аромамасла лаванди', b2Sub: 'Антистрес-формула',
+    b3: 'М\'яка / Обволікаюча', b3Sub: 'Інтенсивність натиску',
+    b4: 'Приглушене світло', b4Sub: 'Атмосфера свічок',
+    price: '5 000 ₴',
+    time: '1 година · Робота двох майстрів'
+  },
+  {
+    icon: '🔥',
+    label: 'Глибоке прогрівання (Каміння)',
+    serviceName: 'Масаж базальтовим камінням',
+    badge: 'Вулканічний базальт',
+    recLabel: 'Теплотерапія',
+    title: 'Масаж базальтовим камінням',
+    desc: 'Гарячі базальтові камені прогрівають глибокі шари м\'язів і зв\'язок значно сильніше, ніж звичайні дотики. Знімає накопичену втому, відновлює кровообіг і дарує стан безтурботності.',
+    img: 'img/g4.jpg',
+    b1: 'Глибоке прогрівання', b1Sub: 'Очікуваний результат',
+    b2: 'Вулканічні породи', b2Sub: 'Тримають тепло 45 хв',
+    b3: 'Тепловий релакс', b3Sub: 'Без больового тиску',
+    b4: 'Чай після сеансу', b4Sub: 'Альпійські трави',
+    price: '3 200 ₴',
+    time: '1 год 15 хв · Стоун-ритуал'
+  },
+  {
+    icon: '🏃‍♂️',
+    label: 'Спорт & Відновлення',
+    serviceName: 'Відновлення після тренувань',
+    badge: 'Після навантажень',
+    recLabel: 'Спортивний протокол',
+    title: 'Відновлення після тренувань',
+    desc: 'Спеціалізована техніка для спортсменів та активних людей: прискорений вивід молочної кислоти, лімфодренаж, зняття крепатури та профілактика перевантаження м\'язів.',
+    img: 'img/g6.jpg',
+    b1: 'Швидке відновлення', b1Sub: 'Очікуваний результат',
+    b2: 'Охолоджуюча олія', b2Sub: 'М\'ята та евкаліпт',
+    b3: 'Спортивна / Активна', b3Sub: 'Інтенсивність натиску',
+    b4: 'Розтяжка зв\'язок', b4Sub: 'Пасивний стретчинг',
+    price: '2 800 ₴',
+    time: '1 година · Спортивний фокус'
+  },
+  {
+    icon: '🤍',
+    label: 'Для двох / Спільний вікенд',
+    serviceName: 'Масаж для пар',
+    badge: 'Один простір на двох',
+    recLabel: 'Романтичний формат',
+    title: 'Парний релакс-сеанс у свічках',
+    desc: 'Один затишний кабінет, два столи поруч, два персональних майстри. Ідеальний формат для річниці, побачення або просто теплого спільного відпочинку під спокійну музику.',
+    img: 'img/g2.jpg',
+    b1: 'Спільний відпочинок', b1Sub: 'Очікуваний результат',
+    b2: 'Індивідуальні олії', b2Sub: 'Під запит кожного',
+    b3: 'Індивідуальний тиск', b3Sub: 'Окремо для кожного',
+    b4: 'Чайна церемонія', b4Sub: 'Свічки та ласощі',
+    price: '5 300 ₴',
+    time: '1 год 30 хв · Для двох'
+  },
+  {
+    icon: '✨',
+    label: 'Авторська методика Вікторії',
+    serviceName: 'Авторська методика',
+    badge: '11+ років досвіду',
+    recLabel: 'Індивідуальний підхід',
+    title: 'Авторська методика Вікторії Довганюк',
+    desc: 'Поєднання класичної фізіотерапії, міофасціального релізу та східних тілесних практик. Сеанс будується індивідуально після діагностики стану хребта й тонусу м\'язів.',
+    img: 'img/g3.jpg',
+    b1: 'Анатомічна діагностика', b1Sub: 'Очікуваний результат',
+    b2: 'Преміальні олії', b2Sub: 'Індивідуальний бленд',
+    b3: 'Адаптивна сила', b3Sub: 'Слухаємо кожен м\'яз',
+    b4: 'Тривалий ефект', b4Sub: 'Поради для постави',
+    price: '3 000 ₴',
+    time: '1 година · Флагманський сеанс'
+  }
+];
+
+var activeMatcherIdx = 0;
+
+function renderMatcher(){
+  var pWrap = document.getElementById('matcherPills');
+  if (!pWrap) return;
+  pWrap.innerHTML = MATCHER_PRESETS.map(function(p, i){
+    return '<button class="matcher-pill '+(i===activeMatcherIdx?'active':'')+'" type="button" onclick="setMatcher('+i+')">'+
+      '<span>'+p.icon+'</span> <span>'+esc(p.label)+'</span></button>';
+  }).join('');
+  
+  var p = MATCHER_PRESETS[activeMatcherIdx];
+  var img = document.getElementById('matcherImg');
+  if (img) {
+    img.style.opacity = '0.3';
+    setTimeout(function(){
+      img.src = p.img;
+      img.style.opacity = '1';
+    }, 120);
+  }
+
+  document.getElementById('matcherBadge').textContent = p.badge;
+  document.getElementById('matcherRecLabel').textContent = p.recLabel;
+  document.getElementById('matcherTitle').textContent = p.title;
+  document.getElementById('matcherDesc').textContent = p.desc;
+  document.getElementById('matcherBen1').textContent = p.b1;
+  document.getElementById('matcherBen1Sub').textContent = p.b1Sub;
+  document.getElementById('matcherBen2').textContent = p.b2;
+  document.getElementById('matcherBen2Sub').textContent = p.b2Sub;
+  document.getElementById('matcherBen3').textContent = p.b3;
+  document.getElementById('matcherBen3Sub').textContent = p.b3Sub;
+  document.getElementById('matcherBen4').textContent = p.b4;
+  document.getElementById('matcherBen4Sub').textContent = p.b4Sub;
+  document.getElementById('matcherPrice').textContent = p.price;
+  document.getElementById('matcherTime').textContent = p.time;
+}
+
+function setMatcher(i){
+  activeMatcherIdx = i;
+  renderMatcher();
+}
+
+function quickSelectService(idx){
+  bkService(idx);
+  document.getElementById('booking').scrollIntoView({behavior:'smooth'});
+  highlightSelectedChip(idx);
+}
+
+function bookFromMatcher(){
+  var preset = MATCHER_PRESETS[activeMatcherIdx];
+  var foundIdx = 0;
+  for (var i=0; i<D.services.length; i++){
+    if (D.services[i].name === preset.serviceName){
+      foundIdx = i;
+      break;
+    }
+  }
+  bkService(foundIdx);
+  document.getElementById('booking').scrollIntoView({behavior:'smooth'});
+  highlightSelectedChip(foundIdx);
+}
+
+function bookCertificate(){
+  bkService(0);
+  document.getElementById('booking').scrollIntoView({behavior:'smooth'});
+  var line = document.getElementById('bkSumLine');
+  if (line) line.textContent = 'Подарунковий VIP-сертифікат';
+  var sub = document.getElementById('bkSumSub');
+  if (sub) sub.textContent = 'Крафтовий бокс або PDF · Узгодимо деталі під час дзвінка';
+  highlightSelectedChip(0);
+}
+
+function highlightSelectedChip(idx){
+  setTimeout(function(){
+    var chips = document.querySelectorAll('#bkServices .bk-chip');
+    if (chips[idx]){
+      chips[idx].style.transition = 'transform .2s ease, box-shadow .2s ease';
+      chips[idx].style.transform = 'scale(1.08)';
+      chips[idx].style.boxShadow = '0 0 16px rgba(138,122,95,0.6)';
+      setTimeout(function(){
+        chips[idx].style.transform = 'none';
+        chips[idx].style.boxShadow = 'none';
+      }, 500);
+    }
+  }, 350);
+}
+
+renderMatcher();
 
 document.getElementById('trustWrap').innerHTML = D.trust.map(function(t){
   return '<div class="trust-card reveal"><span class="trust-icon">'+t.icon+'</span>'+
@@ -433,19 +748,76 @@ function toggleFaq(el){
 }
 </script>
 
-<!-- telegram-cms-badge -->
-<div id="tg-cms-badge" style="position:fixed;bottom:78px;left:20px;z-index:9999;display:flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #2AABEE;border-radius:32px;padding:8px 16px 8px 10px;box-shadow:0 4px 18px rgba(0,0,0,.15);font-family:sans-serif;font-size:13px;font-weight:600;color:#0a0a0a;" title="Ціни й послуги редагуються з Telegram-бота">
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="#2AABEE"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 7.003l-1.694 7.981c-.124.553-.451.688-.913.428l-2.527-1.862-1.22 1.174c-.135.135-.248.248-.508.248l.18-2.582 4.7-4.247c.204-.18-.045-.28-.315-.1L8.27 14.483l-2.48-.775c-.538-.168-.55-.538.113-.797l9.667-3.726c.448-.163.84.109.36.821z"/></svg>
-  <span>Редагується з Telegram</span>
-</div>
+<!-- Floating Demo Pill -->
+<style id="wow-demo-pill-styles">
+#wcw-btn { display: none !important; }
+.wow-demo-floating-pill {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(13, 17, 28, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(124, 92, 255, 0.4);
+  border-radius: 999px;
+  padding: 8px 10px 8px 18px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5), 0 0 20px rgba(124, 92, 255, 0.25);
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+  color: #ffffff;
+  max-width: 95vw;
+}
+.wow-demo-pill-badge {
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: rgba(124, 92, 255, 0.2);
+  color: #c4b5fd;
+  border: 1px solid rgba(124, 92, 255, 0.4);
+  padding: 3px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.wow-demo-pill-text {
+  font-size: 0.88rem;
+  color: #e2e8f0;
+  white-space: nowrap;
+}
+@media (max-width: 680px) {
+  .wow-demo-pill-text { display: none; }
+  .wow-demo-floating-pill { padding: 6px 8px 6px 14px; bottom: 14px; }
+}
+.wow-demo-pill-btn {
+  background: linear-gradient(100deg, #7C5CFF, #00E5FF);
+  color: #04040a;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.86rem;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba(124, 92, 255, 0.4);
+}
+.wow-demo-pill-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(124, 92, 255, 0.6);
+}
+</style>
 
-<!-- wow-order-banner -->
-<div id="wow-order-bar" style="position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#101014;color:#fff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;box-shadow:0 -4px 24px rgba(0,0,0,.35);padding:10px 44px 10px 14px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;text-align:center">
-  <span style="font-size:13.5px;line-height:1.35">💡 Демо від <b>WOW Studio</b> · Хочете такий сайт для свого бізнесу?</span>
-  <a href="https://t.me/studio_sites" target="_blank" rel="noopener" style="background:#ffb01f;color:#101014;font-weight:800;font-size:13.5px;text-decoration:none;padding:8px 18px;border-radius:999px;white-space:nowrap">Написати →</a>
-  <button onclick="document.getElementById('wow-order-bar').style.display='none'" aria-label="Закрити" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;color:#888;font-size:20px;cursor:pointer;padding:4px 8px">×</button>
+<div class="wow-demo-floating-pill" id="wowDemoFloatingPill">
+  <span class="wow-demo-pill-badge">✨ ДЕМО-ПРОЄКТ</span>
+  <span class="wow-demo-pill-text">Хочете такий сайт під ваш бренд за 48 годин?</span>
+  <button type="button" class="wow-demo-pill-btn" onclick="window.openWowContact && window.openWowContact('Демо: massage-vd')">
+    Залишити заявку →
+  </button>
 </div>
-<div style="padding:6px 12px 64px"></div>
+<script src="contact-widget.js"></script>
 
 </body>
 </html>
